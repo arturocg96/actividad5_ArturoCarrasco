@@ -15,18 +15,18 @@ export class AppComponent {
   arrayNoticias: Inoticias[] = [];
 
   constructor() {
-    // Inicializar el array con dos noticias
+    
     this.arrayNoticias = [
       {
-        titulo: 'Noticia 1',
+        titulo: 'Noticia 1: Objetivo personal Máster',
         imagen: 'https://via.placeholder.com/150',
-        contenido: 'Este es el cuerpo de la noticia 1.',
-        fecha: '2024-06-30'
+        contenido: 'Voy a ser el Desarrollador Full Stack Junior que todas las empresas buscan.',
+        fecha: '2024-07-01'
       },
       {
-        titulo: 'Noticia 2',
+        titulo: 'Noticia 2: Motivación',
         imagen: 'https://via.placeholder.com/150',
-        contenido: 'Este es el cuerpo de la noticia 2.',
+        contenido: 'Cada vez me siento más cómodo con las tecnologías que estamos aprendiendo.',
         fecha: '2024-07-01'
       }
     ];
