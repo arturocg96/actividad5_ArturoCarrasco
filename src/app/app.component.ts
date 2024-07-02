@@ -1,13 +1,34 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
+import { Inoticias } from './interfaces/inoticias';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [FormularioComponent, ListadoNoticiasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'actividad5_ArturoCarrasco';
+  
+  arrayNoticias: Inoticias[] = [];
+
+  constructor() {
+    // Inicializar el array con dos noticias
+    this.arrayNoticias = [
+      {
+        titulo: 'Noticia 1',
+        imagen: 'https://via.placeholder.com/150',
+        contenido: 'Este es el cuerpo de la noticia 1.',
+        fecha: '2024-06-30'
+      },
+      {
+        titulo: 'Noticia 2',
+        imagen: 'https://via.placeholder.com/150',
+        contenido: 'Este es el cuerpo de la noticia 2.',
+        fecha: '2024-07-01'
+      }
+    ];
+  }
 }

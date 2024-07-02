@@ -1,0 +1,20 @@
+<h2 class="formulario__titulo">Formulario de Publicación</h2>
+<div class="formulario">
+  <div class="formulario__grupo">
+    <label class="formulario__label" for="titulo">Título:</label>
+    <input class="formulario__input" id="titulo" [(ngModel)]="newNoticia.titulo" name="titulo" required>
+  </div>
+  <div class="formulario__grupo">
+    <label class="formulario__label" for="imagen">Imagen (URL):</label>
+    <input class="formulario__input" id="imagen" [(ngModel)]="newNoticia.imagen" name="imagen" required>
+  </div>
+  <div class="formulario__grupo">
+    <label class="formulario__label" for="contenido">Texto:</label>
+    <textarea class="formulario__input formulario__textarea" id="contenido" [(ngModel)]="newNoticia.contenido" name="contenido" required></textarea>
+  </div>
+  <div class="formulario__grupo">
+    <label class="formulario__label" for="fecha">Fecha:</label>
+    <input class="formulario__input" id="fecha" type="date" [(ngModel)]="newNoticia.fecha" name="fecha" required>
+  </div>
+  <button class="formulario__boton" (click)="getData()">Publicar</button>
+</div>
