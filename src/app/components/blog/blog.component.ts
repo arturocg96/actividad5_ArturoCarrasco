@@ -26,7 +26,7 @@ export class BlogComponent {
         titulo: 'Actividad 4',
         imagen: 'https://via.placeholder.com/150',
         contenido:
-          'He utilizado tres componentes para seguir la línea de lo visto en clase.',
+          'He utilizado tres componentes para seguir la línea de lo visto en clase sin sacrificar ningún criterio de correción de la rúbrica.',
         fecha: '2024-07-01',
       },
     ];
